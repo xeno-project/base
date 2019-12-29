@@ -1,6 +1,6 @@
 [submodule "deploy/viur/core"]
 	path = deploy/viur/core
-	url = https://github.com/viur-framework/viur-core.git
+	url=https://github.com/xeno-project/viur-core.git
 [submodule "vi"]
 	path = vi
 	url = https://github.com/viur-framework/vi.git
