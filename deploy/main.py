@@ -23,7 +23,11 @@
 # Author:       {{whoami}}
 #
 # ------------------------------------------------------------------------------
-
+# use local libraries
+# installed with pip3 install -r requirements.txt -t deploy/lib
+import sys
+sys.path.insert(0, './lib') #load preinstalled libs
+# ------------------------------------------------------------------------------
 from viur.core import conf, securityheaders
 
 # ------------------------------------------------------------------------------
@@ -44,7 +48,8 @@ from viur.core import conf, securityheaders
 #
 
 conf["admin.vi.name"] = "{{app_id}}"
-
+conf["viur.forceSSL"] = False #FIXME
+conf["viur.disableCache"] = True #FIXME
 # ------------------------------------------------------------------------------
 # Content Security Policy
 #
@@ -58,6 +63,7 @@ securityheaders.addCspRule("connect-src", "api.github.com", "enforce")
 #
 
 from viur import core
+from viur import xeno
 import modules, render
 
 #core.setDefaultLanguage("en") #set default language!
@@ -65,3 +71,4 @@ app = core.setup(modules, render)
 
 if __name__ == "__main__":
 	core.run()
+	xeno.run(app)
