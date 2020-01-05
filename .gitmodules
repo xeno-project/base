@@ -7,3 +7,9 @@
 [submodule "sources/less/ignite"]
 	path = sources/less/ignite
 	url = https://github.com/viur-framework/ignite.git
+[submodule "deploy/viur/database"]
+	path = deploy/viur/database
+	url = https://github.com/xeno-project/database.git
+[submodule "deploy/viur/xeno"]
+	path = deploy/viur/xeno
+	url = https://github.com/xeno-project/xeno.git
