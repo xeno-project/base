@@ -1,12 +1,10 @@
 # This is a place to define additional library requirements needed to run the project.
 
-#GoogleAppEngineCloudStorageClient
-#google-api-python-client
-#requests==2.1.0
-#requests_toolbelt==0.7.1
-
-jinja2
-webob
+#-------------------------------------
+#Google libraries
+#-------------------------------------
+GoogleAppEngineCloudStorageClient
+google-api-python-client
 google-cloud-firestore
 google-cloud-datastore
 google-cloud-redis
@@ -14,4 +12,30 @@ google-cloud-logging==1.11.0
 google-cloud-storage
 google-cloud-tasks
 google-auth
+
+#-------------------------------------
+#optional / useful libraries
+#-------------------------------------
+requests
+requests_toolbelt
+
+#-------------------------------------
+#nesessary libraries
+#-------------------------------------
+jinja2
+webob
 pillow
+
+#-------------------------------------
+#xeno-viur libraries
+#-------------------------------------
+PyYAML          # read yaml configs
+apscheduler     # deferred Tasks and cron
+colorlog        # better logging
+
+#-------------------------------------
+#xeno-viur databases
+#-------------------------------------
+unqlite
+#mongodb
+#arangodb
