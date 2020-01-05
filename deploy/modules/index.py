@@ -4,7 +4,7 @@ from viur.core.render.html import default as default_render
 
 # from google.appengine.api import urlfetch, app_identity
 
-import json, logging, datetime, httplib
+import json, logging, datetime
 
 
 class index(object):
