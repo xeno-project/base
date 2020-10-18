@@ -70,5 +70,5 @@ import modules, render
 app = core.setup(modules, render)
 
 if __name__ == "__main__":
-	core.run()
+	#core.run()
 	xeno.run(app)
