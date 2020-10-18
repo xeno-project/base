@@ -14,13 +14,13 @@ Things that (seams to be) work:
  - user creation / login
  - calling vi with /vi/s/main.html
  - Deferred Tasks
-
-Things that are broken:
  - periodic Tasks
- - Mailing
  - File Handling
  - transactions - maybe.. tests needed
  - relations are totaly untested
+ 
+Things that are broken:
+ - Mailing
  - many more...
 
 
